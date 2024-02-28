@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Strip{% endblock %}
+
+{% block body %}
+    <h1>Edit Strip</h1>
+
+    {{ include('strips/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_strips_index') }}">back to list</a>
+
+    {{ include('strips/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Strip
+{% endblock %}
+
+{% block body %}
+	<h1>Strip</h1>
+
+	<div>{{ strip.name }}</div>
+<div class="row">
+<div class="col-6">
+		<img src="{{ vich_uploader_asset(strip, 'imageFile') }}" alt="Strip" class="img-fluid mb-2 mb-md-0 me-md-3">
+</div>
+<div class="col-6">
+		{{ strip.description }}
+</div>
+</div>
+
+	<a href="{{ path('app_strips_index') }}">back to list</a>
+
+	<a href="{{ path('app_strips_edit', {'id': strip.id}) }}">edit</a>
+
+	{{ include('strips/_delete_form.html.twig') }}
+{% endblock %}
