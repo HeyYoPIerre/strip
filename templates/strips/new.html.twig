@@ -3,9 +3,12 @@
 {% block title %}New Strip{% endblock %}
 
 {% block body %}
+
     <h1>Create new Strip</h1>
 
     {{ include('strips/_form.html.twig') }}
 
+<div classe="m-5">
     <a href="{{ path('app_strips_index') }}">back to list</a>
+</div>
 {% endblock %}

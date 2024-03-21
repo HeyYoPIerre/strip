@@ -7,6 +7,9 @@ import './bootstrap.js';
  * which should already be in your base.html.twig.
  */
 
+// any CSS you import will output into a single css file (app.css in this case)
+import './styles/global.scss';
 
+// start the Stimulus application
+import './bootstrap';
 
-console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');

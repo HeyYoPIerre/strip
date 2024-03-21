@@ -1,8 +1,13 @@
 {{ form_start(form) }}
+<div classe="m-5">
 Name
     {{ form_widget(form.name) }}
+</div>
 
-    <br>Description
-        {{ form_widget(form.description,  {'attr': {'class': 'form-control'}}) }}
+<div classe="m-5"><br>Description
+    {{ form_widget(form.description,  {'attr': {'class': 'form-control'}}) }}
+</div>
+<div classe="m-5">
     <button class="btn">{{ button_label|default('Save') }}</button>
 {{ form_end(form) }}
+</div>
