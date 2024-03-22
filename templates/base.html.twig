@@ -15,6 +15,26 @@
         {% endblock %}
     </head>
     <body>
+    <nav class="container navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="{{ path('app_accueil') }}">Strip</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="justify-content-end collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <li class="nav-item active">
+        <a class="nav-link" href="{{ path('app_strips_index') }}">Index</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ path('app_random_strip') }}">RandomStrip</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{{ path('app_about') }}">About</a>
+    </li>
+    </ul>
+</div>
+</nav>
     <div class="container">
         {% block body %}{% endblock %}
     </div>
